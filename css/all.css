@@ -173,7 +173,13 @@ header .leafPic .leafr {
 .mainTwo .container .characterPic {
   border-radius: 100%;
   overflow: hidden;
-  border: 10px solid white;
+  border: 8px solid white;
+}
+
+@media screen and (min-width: 769px) {
+  .mainTwo .container .characterPic {
+    border: 10px solid white;
+  }
 }
 
 .mainTwo .container .characterCw {
@@ -191,31 +197,35 @@ header .leafPic .leafr {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 769px) {
+.mainthree .top {
+  position: relative;
+}
+
+@media screen and (min-width: 1000px) {
   .mainthree .container {
-    width: 50%;
+    width: 60%;
   }
 }
 
 .mainthree .cloundl {
-  width: 50%;
+  width: 40%;
   position: absolute;
-  top: 5%;
-  left: -25%;
+  top: 50%;
+  left: -10%;
 }
 
 .mainthree .cloundrS {
   width: 20%;
   position: absolute;
-  bottom: 40%;
-  right: 20%;
+  bottom: 10%;
+  right: 10%;
 }
 
 .mainthree .cloundr {
-  width: 40%;
+  width: 30%;
   position: absolute;
-  top: -5%;
-  right: -10%;
+  top: -10%;
+  right: 20%;
 }
 
 .mainthree .cloundA {
@@ -237,21 +247,28 @@ header .leafPic .leafr {
 }
 
 .mainthree .cookie {
-  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainthree .cookie a {
+  margin: 20px;
 }
 
 .mainthree .cookie .cookiel {
   width: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .mainthree .cookie .cookier {
   width: 50%;
+  -webkit-transform: translateY(-30%);
+          transform: translateY(-30%);
 }
 
 footer {
